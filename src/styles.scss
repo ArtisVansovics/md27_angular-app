@@ -1,1 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
+@import "assets/styles/cssReset";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+html, #root {
+  min-height: 100vh;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+#app {
+  color: #F2E9E9;
+  background-color: #31403E;
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding: 30px 20px;
+}
