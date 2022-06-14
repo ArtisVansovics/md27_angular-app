@@ -1,1 +1,11 @@
-<p>jokes-form works!</p>
+<form [formGroup]="jokesForm" class="form">
+  <label class="label">
+    Question
+    <input formControlName="jokeQuestion" class="input" type="text" />
+  </label>
+  <label class="label">
+    Answer
+    <input formControlName="jokeAnswer" class="input" type="text" />
+  </label>
+  <button (click)="addJoke()" class="button">Create</button>
+</form>
