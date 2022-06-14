@@ -13,8 +13,8 @@ export class JokesFormComponent implements OnInit {
 
   buildForm(): void {
     this.jokesForm = this.fb.group({
-      jokeQuestion: ['', [Validators.required]],
-      jokeAnswer: ['', [Validators.required]],
+      question: ['', [Validators.required]],
+      answer: ['', [Validators.required]],
     });
   }
 

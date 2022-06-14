@@ -1,11 +1,17 @@
 <form [formGroup]="jokesForm" class="form">
   <label class="label">
     Question
-    <input formControlName="jokeQuestion" class="input" type="text" />
+    <input formControlName="question" class="input" type="text" />
   </label>
   <label class="label">
     Answer
-    <input formControlName="jokeAnswer" class="input" type="text" />
+    <input formControlName="answer" class="input" type="text" />
   </label>
-  <button (click)="addJoke()" class="button">Create</button>
+  <button (click)="addJoke()" [disabled]="!jokesForm.valid" class="button">
+    Create
+  </button>
 </form>
+
+<!--[disabled]="-->
+<!--jokesForm.get('question')?.hasError('required') ||-->
+<!--jokesForm.get('answer')?.hasError('required')"-->
