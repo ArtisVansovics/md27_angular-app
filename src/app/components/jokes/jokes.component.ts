@@ -13,8 +13,12 @@ export class JokesComponent {
       answer: "Because he didn't get arrays.",
     },
     {
-      question: 'HoW do you tell HTML from HTML5?',
-      answer: "Open it in Internet Explorer. Did it work? No? It's HTML5",
+      question: 'How do you tell HTML from HTML5?',
+      answer: "Open it in Internet Explorer. Did it work? No? It's HTML5.",
     },
   ] as Joke[];
+
+  deleteTask(index: number): void {
+    this.jokes.splice(index, 1);
+  }
 }

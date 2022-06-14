@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Joke } from '../../models/joke.model';
 
 @Component({
@@ -8,4 +8,10 @@ import { Joke } from '../../models/joke.model';
 })
 export class JokesListComponent {
   @Input() jokes: Joke[] | undefined;
+
+  @Output() deleteTaskEvent = new EventEmitter<number>();
+
+  deleteTask(index: number): void {
+    this.deleteTaskEvent.emit(index);
+  }
 }

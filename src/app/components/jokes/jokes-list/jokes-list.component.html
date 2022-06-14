@@ -1,4 +1,7 @@
 <div *ngIf="jokes" class="list">
-  <app-jokes-card *ngFor="let joke of jokes; let i = index" [joke]="joke">
+  <app-jokes-card
+    *ngFor="let joke of jokes; let i = index"
+    [joke]="joke"
+    (deleteTaskEvent)="deleteTask(i)">
   </app-jokes-card>
 </div>

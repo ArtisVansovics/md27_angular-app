@@ -3,6 +3,6 @@
   <p *ngIf="showAnswer">{{ joke.answer }}</p>
   <div class="row">
     <button (click)="toggleAnswerVisibility()">Tell Me</button>
-    <button>Delete</button>
+    <button (click)="deleteJoke()">Delete</button>
   </div>
 </div>

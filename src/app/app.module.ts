@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
 import { JokesComponent } from './components/jokes/jokes.component';
 import { JokesFormComponent } from './components/jokes/jokes-form/jokes-form.component';

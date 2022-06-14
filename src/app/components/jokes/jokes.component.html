@@ -1,4 +1,5 @@
 <div class="wrapper">
   <app-jokes-form></app-jokes-form>
-  <app-jokes-list [jokes]="jokes"></app-jokes-list>
+  <app-jokes-list [jokes]="jokes" (deleteTaskEvent)="deleteTask($event)">
+  </app-jokes-list>
 </div>
