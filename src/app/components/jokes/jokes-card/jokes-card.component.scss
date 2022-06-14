@@ -1,0 +1,20 @@
+.card {
+  background-color: #025951;
+  color: #F2E9E9;
+  display: flex;
+  flex-flow: column;
+  gap: 10px;
+  padding: 20px 10px;
+  border-radius: 10px;
+}
+
+.question {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 15px;
+}

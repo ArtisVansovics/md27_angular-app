@@ -8,4 +8,10 @@ import { Joke } from '../../models/joke.model';
 })
 export class JokesCardComponent {
   @Input() joke: Joke | undefined;
+
+  showAnswer = false;
+
+  toggleAnswerVisibility() {
+    this.showAnswer = !this.showAnswer;
+  }
 }
