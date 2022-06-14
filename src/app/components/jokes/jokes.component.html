@@ -1,6 +1,6 @@
 <div class="wrapper">
   <h1 class="title">Create a joke</h1>
-  <app-jokes-form></app-jokes-form>
+  <app-jokes-form (addJokeEvent)="addJoke($event)"></app-jokes-form>
   <app-jokes-list [jokes]="jokes" (deleteTaskEvent)="deleteTask($event)">
   </app-jokes-list>
 </div>
