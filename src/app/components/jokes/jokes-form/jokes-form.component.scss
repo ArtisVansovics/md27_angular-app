@@ -1,16 +1,32 @@
 .form {
   background-color: #F2B28D;
+  color: #025951;
   display: flex;
   flex-flow: column;
   gap: 20px;
   padding: 30px;
   border-radius: 7px;
+  font-size: 18px;
+  box-shadow: #735A51 0 0 6px 2px;
 }
 
 .label {
   display: flex;
   flex-flow: column;
-  gap: 5px;
+  gap: 10px;
+  line-height: 1;
+}
+
+.input {
+  background-color: #71BBD9;
+  color: #31403E;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+
+  &:focus {
+    outline: #F2E9E9 3px solid;
+  }
 }
 
 .button {

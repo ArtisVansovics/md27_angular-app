@@ -1,11 +1,19 @@
 <form [formGroup]="jokesForm" class="form">
   <label class="label">
     Question
-    <input formControlName="question" class="input" type="text" />
+    <input
+      formControlName="question"
+      class="input"
+      type="text"
+      placeholder="Enter the question" />
   </label>
   <label class="label">
     Answer
-    <input formControlName="answer" class="input" type="text" />
+    <input
+      formControlName="answer"
+      class="input"
+      type="text"
+      placeholder="Enter the punchline" />
   </label>
   <button (click)="addJoke()" [disabled]="!jokesForm.valid" class="button">
     Create
