@@ -14,13 +14,10 @@ import { JokesCardComponent } from './components/jokes/jokes-card/jokes-card.com
     JokesComponent,
     JokesFormComponent,
     JokesListComponent,
-    JokesCardComponent
+    JokesCardComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
