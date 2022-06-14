@@ -9,7 +9,7 @@ import { Joke } from '../../models/joke.model';
 export class JokesCardComponent {
   @Input() joke: Joke | undefined;
 
-  @Output() deleteTaskEvent = new EventEmitter<null>();
+  @Output() deleteJokeEvent = new EventEmitter<null>();
 
   showAnswer = false;
 
@@ -18,6 +18,6 @@ export class JokesCardComponent {
   }
 
   deleteJoke(): void {
-    this.deleteTaskEvent.emit();
+    this.deleteJokeEvent.emit();
   }
 }

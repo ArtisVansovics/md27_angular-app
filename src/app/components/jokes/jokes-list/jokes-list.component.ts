@@ -9,9 +9,9 @@ import { Joke } from '../../models/joke.model';
 export class JokesListComponent {
   @Input() jokes: Joke[] | undefined;
 
-  @Output() deleteTaskEvent = new EventEmitter<number>();
+  @Output() deleteJokeEvent = new EventEmitter<number>();
 
-  deleteTask(index: number): void {
-    this.deleteTaskEvent.emit(index);
+  deleteJoke(index: number): void {
+    this.deleteJokeEvent.emit(index);
   }
 }

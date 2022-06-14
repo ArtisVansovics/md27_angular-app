@@ -18,7 +18,7 @@ export class JokesComponent {
     },
   ] as Joke[];
 
-  deleteTask(index: number): void {
+  deleteJoke(index: number): void {
     this.jokes.splice(index, 1);
   }
 
