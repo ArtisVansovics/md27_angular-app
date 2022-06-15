@@ -3,14 +3,15 @@
   border-radius: 7px;
   cursor: pointer;
   user-select: none;
-  padding: 5px 15px;
+  padding: 8px 15px;
   color: #31403E;
   font-weight: 600;
   font-size: 18px;
-  transition: outline-width 0.2s;
+  line-height: 1;
+  transition: outline-width 0.1s;
 
   &:hover {
-    outline: #F28705 4px solid;
+    outline: #F2E9E9 2px solid;
   }
 
   &:disabled {

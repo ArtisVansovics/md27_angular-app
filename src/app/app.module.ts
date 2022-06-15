@@ -8,6 +8,7 @@ import { JokesFormComponent } from './components/jokes/jokes-form/jokes-form.com
 import { JokesListComponent } from './components/jokes/jokes-list/jokes-list.component';
 import { JokesCardComponent } from './components/jokes/jokes-card/jokes-card.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ButtonComponent } from './components/button/button.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     JokesFormComponent,
     JokesListComponent,
     JokesCardComponent,
+    ButtonComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule],
   providers: [],

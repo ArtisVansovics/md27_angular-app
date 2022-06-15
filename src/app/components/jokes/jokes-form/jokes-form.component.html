@@ -15,11 +15,10 @@
       type="text"
       placeholder="Enter the punchline" />
   </label>
-  <button (click)="addJoke()" [disabled]="!jokesForm.valid" class="button">
-    Create
-  </button>
+  <app-button
+    buttonTitle="Create"
+    (buttonClickEvent)="addJoke()"
+    buttonColor="#71BBD9"
+    [isDisabled]="!jokesForm.valid">
+  </app-button>
 </form>
-
-<!--[disabled]="-->
-<!--jokesForm.get('question')?.hasError('required') ||-->
-<!--jokesForm.get('answer')?.hasError('required')"-->

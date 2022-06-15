@@ -2,7 +2,15 @@
   <h3 class="question">{{ joke.question }}</h3>
   <p *ngIf="showAnswer">{{ joke.answer }}</p>
   <div class="row">
-    <button (click)="toggleAnswerVisibility()">Tell Me</button>
-    <button (click)="deleteJoke()">Delete</button>
+    <app-button
+      buttonTitle="Tell Me"
+      (buttonClickEvent)="toggleAnswerVisibility()"
+      buttonColor="#71BBD9">
+    </app-button>
+    <app-button
+      buttonTitle="Delete"
+      (buttonClickEvent)="deleteJoke()"
+      buttonColor="#F26849">
+    </app-button>
   </div>
 </div>
