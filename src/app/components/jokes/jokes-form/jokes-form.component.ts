@@ -9,6 +9,7 @@ import { Joke } from '../../models/joke.model';
 })
 export class JokesFormComponent implements OnInit {
   @Output() addJokeEvent = new EventEmitter<Joke>();
+
   jokesForm: FormGroup = this.fb.group({});
 
   constructor(private fb: FormBuilder) {}

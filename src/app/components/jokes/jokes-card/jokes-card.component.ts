@@ -13,7 +13,7 @@ export class JokesCardComponent {
 
   showAnswer = false;
 
-  toggleAnswerVisibility() {
+  toggleAnswerVisibility(): void {
     this.showAnswer = !this.showAnswer;
   }
 
